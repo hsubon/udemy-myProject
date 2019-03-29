@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Charmonman');
+@import url("https://fonts.googleapis.com/css?family=Charmonman");
 
 body {
   margin: 0;
@@ -14,7 +14,7 @@ header {
 }
 header h1 {
   display: inline;
-  font-family: 'Charmonman', cursive;
+  font-family: "Charmonman", cursive;
   font-weight: 400;
   font-size: 32px;
   float: left;
@@ -22,9 +22,10 @@ header h1 {
   margin-right: 10px;
   color: pink;
 }
-header h2, h3 {
+header h2,
+h3 {
   display: inline;
-  font-family: 'Charmonman', cursive;
+  font-family: "Charmonman", cursive;
   font-weight: 400;
   font-size: 32px;
   float: right;
@@ -68,27 +69,28 @@ nav ul li:hover ul li {
   display: block;
 }
 #navul {
-  font-family: 'Charmonman', cursive;
+  font-family: "Charmonman", cursive;
   margin-top: 12px;
 }
 .divider {
   background-color: red;
   height: 5px;
 }
-.homeBlack:hover, .homeRed:hover {
+.homeBlack:hover,
+.homeRed:hover {
   background-color: red;
   padding: 30px 10px 5px 6px;
 }
 
 .home_sub {
-  font-family: 'Charmonman', cursive;
+  font-family: "Charmonman", cursive;
   margin: 0;
   padding: 9% 5% 0% 55%;
   font-size: 18px;
   color: yellow;
 }
 .home_time {
-  font-family: 'Charmonman', cursive;
+  font-family: "Charmonman", cursive;
   margin: 0.5% 0% 0% 55%;
   font-size: 45px;
   color: white;
@@ -96,7 +98,7 @@ nav ul li:hover ul li {
   display: inline-block;
 }
 .home_fap {
-  font-family: 'Charmonman', cursive;
+  font-family: "Charmonman", cursive;
   margin: 0% 0% 0% 55%;
   font-size: 69px;
   color: pink;
@@ -111,7 +113,7 @@ nav ul li:hover ul li {
   padding: 0.1em;
   cursor: pointer;
   outline: none;
-  font-family: 'Charmonman', cursive;
+  font-family: "Charmonman", cursive;
   font-weight: 900;
 }
 .dog {
