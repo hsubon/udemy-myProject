@@ -1,7 +1,10 @@
 /********** SLIDER **********/
+body {
+  background: #979797;
+}
 .slider {
   max-width: 940px;
-  margin: 180px auto 100px auto;
+  margin: 0px auto 30px auto;
 }
 
 .slide-viewer {
