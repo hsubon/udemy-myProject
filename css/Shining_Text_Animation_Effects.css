@@ -1,15 +1,15 @@
-body {
-  margin: 0;
-  padding: 0;
+section {
+  background: #000;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: #000;
+  width: 100%;
+  height: 95vh;
+  position: relative;
 }
 
-p {
-  position: relative;
+section p {
   color: #fff;
   text-transform: uppercase;
   font-size: 10em;
