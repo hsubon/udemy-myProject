@@ -54,7 +54,7 @@ $(".slider").each(function() {
         // Otherwise
         move(0); // Move to the first slide
       }
-    }, 4000); // Milliseconds timer will wait
+    }, 3000); // Milliseconds timer will wait
   }
 
   $.each($slides, function(index) {
