@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Charmonman');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: gray;
+  background-size: cover;
+}
+header {
+  background: black;
+  color: pink;
+  padding: 8px 0px 6px 30px;
+  height: 60px;
+}
+header h1 {
+  display: inline;
+  font-family: 'Charmonman', cursive;
+  font-weight: 400;
+  font-size: 32px;
+  float: left;
+  margin-top: -15px;
+  margin-right: 10px;
+  color: pink;
+}
+header h2, h3 {
+  display: inline;
+  font-family: 'Charmonman', cursive;
+  font-weight: 400;
+  font-size: 32px;
+  float: right;
+  margin-top: -15px;
+  margin-right: 10px;
+  color: white;
+}
+nav ul {
+  /* display: inline;
+  padding: 0px;
+  float: left;
+  list-style-type: none; */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  /* display: inline-block;
+  list-style-type: none;
+  color: pink;
+  float: left;
+  margin-left: 12px; */
+  float: left;
+  width: 200px;
+  height: 40px;
+  margin-bottom: 1px;
+  background-color: black;
+  opacity: 0.8;
+  line-height: 60px;
+  text-align: center;
+  font-size: 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li ul li {
+  display: none;
+}
+nav ul li:hover ul li {
+  display: block;
+}
+#navul {
+  font-family: 'Charmonman', cursive;
+  margin-top: 12px;
+}
+.divider {
+  background-color: red;
+  height: 5px;
+}
+.homeBlack:hover, .homeRed:hover {
+  background-color: red;
+  padding: 30px 10px 5px 6px;
+}
+
+.home_sub {
+  font-family: 'Charmonman', cursive;
+  margin: 0;
+  padding: 9% 5% 0% 55%;
+  font-size: 18px;
+  color: yellow;
+}
+.home_time {
+  font-family: 'Charmonman', cursive;
+  margin: 0.5% 0% 0% 55%;
+  font-size: 45px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+}
+.home_fap {
+  font-family: 'Charmonman', cursive;
+  margin: 0% 0% 0% 55%;
+  font-size: 69px;
+  color: pink;
+}
+.btn_fap {
+  margin: 0% 0% 0% 55%;
+  background: yellow;
+  color: black;
+  border: none;
+  height: 50px;
+  font-size: 1.4em;
+  padding: 0.1em;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Charmonman', cursive;
+  font-weight: 900;
+}
+.dog {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
