@@ -1,4 +1,4 @@
-const path = 'C:/Users/User/Documents/GitHub/udemy-myProject/Magic/img/';
+const path = 'img/';
 
 let start = document.getElementById('start');
 let container = document.getElementsByClassName('container')[0];
