@@ -1,4 +1,4 @@
-let path = "C:/Users/User/Documents/GitHub/Magic/img/";
+let path = 'C:/Users/User/Documents/GitHub/udemy-myProject/Magic/img/';
 let start = document.getElementById('start');
 let container = document.getElementsByClassName('container')[0];
 let ok = document.getElementsByClassName('ok')[0];
