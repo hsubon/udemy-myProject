@@ -1,4 +1,5 @@
-let path = 'C:/Users/User/Documents/GitHub/udemy-myProject/Magic/img/';
+const path = 'C:/Users/User/Documents/GitHub/udemy-myProject/Magic/img/';
+
 let start = document.getElementById('start');
 let container = document.getElementsByClassName('container')[0];
 let ok = document.getElementsByClassName('ok')[0];
@@ -37,6 +38,7 @@ let allcard = [];
 
   });
 })();
+
 function init() {
   for (i = 0; i < 12; i++) {
     allcard[i] = i + 1;

@@ -22,7 +22,7 @@ body {
   margin: 0 auto;
   width: 1000px;
   height: 300px;
-  background-image: url('/Magic/img/bg-card.webp');
+  /* background-image: url('/Magic/img/bg-card.webp'); */
 }
 .card {
   perspective: 1000;
