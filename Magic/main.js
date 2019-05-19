@@ -1,4 +1,4 @@
-const path = 'img/';
+const path = '/Magic/img/';
 
 let start = document.getElementById('start');
 let container = document.getElementsByClassName('container')[0];
