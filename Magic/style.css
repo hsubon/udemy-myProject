@@ -10,7 +10,7 @@ body {
   font-weight: bold;
   font-size: 3rem;
   color: white;
-  padding: 30px;
+  padding: 30px 0;
   width: 100%;
   background: #000;
   margin-bottom: 30px;
@@ -20,39 +20,24 @@ body {
   position: relative;
   display: block;
   margin: 0 auto;
-  width: 1000px;
+  width: 1500px;
   height: 300px;
-  /* background-image: url('/Magic/img/bg-card.webp'); */
 }
 .card {
-  perspective: 1000;
+  /* perspective: 1000; */
   position: relative;
   display: inline-block;
+  margin: 0 50px;
   width: 200px;
   height: 100%;
   transform-style: preserve-3d;
   transition: all 1s ease;
 }
-.card-flipped .front {
-  transform:rotate3d(0,1,0,180deg);  
-}
-.card-flipped .back {
-  transform:rotate3d(0,1,0,0deg);   
-}
-/* .card-flipped-2 .front {
-  transform:rotate3d(0,1,0,0deg);  
-}
-.card-flipped-2 .back {
-  transform:rotate3d(0,1,0,180deg);   
-} */
 .front {
   position: absolute;
   width: 200px;
   height: 100%;
   backface-visibility: hidden;
-}
-.clear {
-  clear: both;
 }
 .back {
   position: absolute;
@@ -61,6 +46,12 @@ body {
   backface-visibility: hidden;
   transform:rotate3d(0,1,0,-180deg);
   transform: rotateY(180deg);
+}
+.card-flipped .front {
+  transform:rotate3d(0,1,0,180deg);  
+}
+.card-flipped .back {
+  transform:rotate3d(0,1,0,0deg);   
 }
 .play-btn {
   position: relative;

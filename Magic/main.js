@@ -118,6 +118,7 @@ function removeDom() {
     container.removeChild(container.firstChild);
   }
 }
+
 function play() {
   flip(fivecard.length);
     setTimeout(function() {
@@ -132,3 +133,4 @@ function play() {
       restart.style.visibility = 'visible';
     }, 4500);
 }
+
