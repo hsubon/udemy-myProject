@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Magic</title>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-    <div class="header">
-        <div class="container">
-            <h1>Mind Control</h1>
-        </div>
-    </div>
-    <div class="playground">
-        <div id="panel"></div>
-        <div class="play-btn">
-            <button id="start">start</button>
-        </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">read your mind</div>
+    <div class="container"></div>
+    <div class="play-btn">
+      <button id="start">start</button>
     </div>
     <div class="mask">
-        <div class="intro">
-          遊戲方式：
-            (1) 隨機記住一張牌面的花色及大小
-            (2) 5秒後會將您所想的牌消失
-          <button onclick="ok()">OK</button>
-        </div>
+      <div class="intro">
+        遊戲方式<br>(1) 隨機記住一張牌面的花色及大小<br>(2) 2秒後會將您所想的牌消失
+        <button class="ok">OK</button>
       </div>
+    </div>
     <script src="main.js"></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.js"
+      integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
