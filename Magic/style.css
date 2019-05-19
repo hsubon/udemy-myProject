@@ -39,6 +39,12 @@ body {
 .card-flipped .back {
   transform:rotate3d(0,1,0,0deg);   
 }
+/* .card-flipped-2 .front {
+  transform:rotate3d(0,1,0,0deg);  
+}
+.card-flipped-2 .back {
+  transform:rotate3d(0,1,0,180deg);   
+} */
 .front {
   position: absolute;
   width: 200px;
@@ -63,14 +69,18 @@ body {
 }
 .play-btn button {
   visibility: hidden;
-  margin-top: 30px;
-  width: 150px;
+  margin: 30px 10px;
+  width: 300px;
   font-size: 2rem;
   border-radius: 0;
   padding: 9px 20px;
   cursor: pointer;
   text-transform: uppercase;
   text-align: center;
+}
+#restart {
+  display: none;
+  visibility: hidden;
 }
 .mask {
   width: 100vw;

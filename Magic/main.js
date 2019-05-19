@@ -1,6 +1,6 @@
 let path = 'img/';
-
 let start = document.getElementById('start');
+let restart = document.getElementById('restart');
 let container = document.getElementsByClassName('container')[0];
 let ok = document.getElementsByClassName('ok')[0];
 let mask = document.getElementsByClassName('mask')[0];
@@ -8,6 +8,7 @@ let fivecard = [];
 let remaincard = [];
 let fourcard = [];
 let allcard = [];
+
 (function() {
 
   init();
@@ -21,47 +22,46 @@ let allcard = [];
   
   start.addEventListener("click", () => {
 
-    start.disabled = "true";
-
-    flip(fivecard.length);
-    setTimeout(function() {
-      while (container.firstChild) {
-        container.removeChild(container.firstChild);
-      }
-    }, 3000);
-
-    setTimeout(function() {
-      createElementDom(fourcard);
-      console.log(fourcard);
-      flip(fourcard);
-    }, 3500);
-
+    start.disabled = true;
+    play();
   });
+
+  restart.addEventListener('click', () => {
+    removeDom();
+    init();
+    createElementDom(fivecard);
+    play();
+  });
+  
 })();
 
 function init() {
+
   for (i = 0; i < 12; i++) {
     allcard[i] = i + 1;
   }
+  // removeDom();
   fivecard = getRandomArrayElements(allcard, 5);
   remaincard = check(allcard, fivecard);
   fourcard = getRandomArrayElements(remaincard, 4);
 }
 function flip(len) {
-  var timer = null;
+  var timer1 = null;
+  var timer2 = null;
   var i = 0;
   var j = 0;
 
   var aFlip = $(".card");
   // console.log(aFlip);
   function flipFn(arg1, arg2) {
-    aFlip.eq(i).addClass('card-flipped'); 
+    aFlip.eq(i).toggleClass('card-flipped');
+    
     i++;
     if(i==len){
-      i=0;
+      i=0; 
     }
   }
-  timer = setInterval(flipFn, 300);
+  timer1 = setInterval(flipFn, 300);
 }
 
 function createElementDom(arr) {
@@ -111,4 +111,24 @@ function check(arr1, arr2) {
     }
   }
   return arr;
+}
+
+function removeDom() {
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+}
+function play() {
+  flip(fivecard.length);
+    setTimeout(function() {
+      removeDom();
+    }, 3200);
+    
+    setTimeout(function() {
+      createElementDom(fourcard);
+      console.log(fourcard);
+      flip(fourcard);
+      restart.style.display = 'block';
+      restart.style.visibility = 'visible';
+    }, 4500);
 }
